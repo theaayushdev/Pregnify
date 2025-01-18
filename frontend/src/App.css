@@ -1,38 +1,99 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6; /* Light background */
+  color: #333;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #ffdfdf; /* Soft pink background */
+  padding: 20px;
+  border-bottom: 2px solid #ff6f61;
+}
+
+h1 {
+  color: #ff6f61;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #007bff;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.App-main {
+  padding: 20px;
+}
+
+.tracker-section,
+.tips-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tracker-section h2,
+.tips-section h2 {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.due-date-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.track-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.track-button:hover {
+  background-color: #e65a50;
+}
+
+.tips-list {
+  list-style-type: disc;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.tip-item {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.App-footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffdfdf;
+  font-size: 0.9rem;
 }

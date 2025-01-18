@@ -15,7 +15,7 @@ function App() {
       <h1>Pregnify</h1>
 
       <header className="App-header">
-        <h1>Welcome to Pregnancy Tracker</h1>
+        <h1>Welcome to Pregnancy </h1>
         <p>Track your pregnancy week by week and get tips for a healthy pregnancy.</p>
         <a
           className="App-link"

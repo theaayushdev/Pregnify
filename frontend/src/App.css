@@ -3,8 +3,8 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f3f4f6; /* Light background */
-  color: #333;
+  background-color: #ffe4e1; /* Light pink background from 'sirus' */
+  color: #333; /* Text color for readability */
 }
 
 .App {
@@ -12,70 +12,73 @@ body {
 }
 
 .App-header {
-  background-color: #ffdfdf; /* Soft pink background */
+  background-color: #ffc0cb; /* Light pink from 'sirus' */
   padding: 20px;
-  border-bottom: 2px solid #ff6f61;
+  border-bottom: 2px solid #ffb6c1; /* Slightly darker pink from 'sirus' */
 }
 
 h1 {
-  color: #ff6f61;
+  color: #ff6f61; /* From 'main' */
   font-size: 2.5rem;
 }
 
 p {
   font-size: 1.2rem;
   margin: 10px 0;
+  color: #ff6f61; /* Soft pink text from 'sirus' */
 }
 
 .App-link {
-  color: #007bff;
+  color: #ff69b4; /* Hot pink for links from 'sirus' */
   text-decoration: none;
 }
 
 .App-link:hover {
-  color: #0056b3;
+  color: #ff1493; /* Deep pink on hover from 'sirus' */
   text-decoration: underline;
 }
 
 .App-main {
   padding: 20px;
+  background-color: #ffe4e1; /* Light pink from 'sirus' */
 }
 
 .tracker-section,
 .tips-section {
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffd1dc; /* Light pink from 'sirus' */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4); /* Pink shadow from 'sirus' */
 }
 
 .tracker-section h2,
 .tips-section h2 {
-  color: #ff6f61;
+  color: #ff69b4; /* Hot pink from 'sirus' */
   margin-bottom: 10px;
 }
 
 .due-date-input {
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #ffb6c1; /* Light pink border from 'sirus' */
   border-radius: 5px;
   margin-right: 10px;
+  background-color: #ffe4e1; /* Light pink background from 'sirus' */
 }
 
 .track-button {
   padding: 10px 20px;
   font-size: 1rem;
-  color: #fff;
-  background-color: #ff6f61;
+  color: #fff; /* White text for contrast from 'sirus' */
+  background-color: #ff6f61; /* Soft pink from both */
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .track-button:hover {
-  background-color: #e65a50;
+  background-color: #ff5c5c; /* Slightly darker pink from 'sirus' */
 }
 
 .tips-list {
@@ -89,11 +92,13 @@ p {
 .tip-item {
   font-size: 1rem;
   margin-bottom: 10px;
+  color: #ff6f61; /* Soft pink from 'sirus' */
 }
 
 .App-footer {
   margin-top: 20px;
   padding: 10px;
-  background-color: #ffdfdf;
+  background-color: #ffc0cb; /* Light pink footer from 'sirus' */
   font-size: 0.9rem;
+  color: #ff69b4; /* Hot pink text from 'sirus' */
 }

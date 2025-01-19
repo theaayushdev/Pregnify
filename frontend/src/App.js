@@ -1,17 +1,24 @@
 import React from 'react';
 import './App.css';
-
+// import mainImage from './assests/images/main.png';
 
 function Mypages() {
   return (
     <nav className="top-nav">
-      <a href="#home" className="nav-link"> Home | </a>
-      <a href="#profile" className="nav-link"> Profile | </a>
-      <a href="#features" className="nav-link"> Features | </a>
+      <a href="#home" className="nav-link"> Home </a>
+      <a href="#profile" className="nav-link"> Profile </a>
+      <a href="#features" className="nav-link"> Features </a>
     </nav>
   );
 }
-
+// images to be added at last
+// function Images() {
+//   return (
+//     <div>
+//       <img className="main-image" src={mainImage} alt="Main" />
+//     </div>
+//   );
+// }
 
 function App() {
   const tips = [
@@ -24,10 +31,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='Pregnify'> Pregnify</h1>
-
+      <h1 className="Pregnify">Pregnify</h1>
       <header className="App-header">
-        <h1>Welcome to Pregnancy </h1>
+        {/* <Images /> */}
+        <h1>Welcome to Pregnancy</h1>
         <p>Track your pregnancy week by week and get tips for a healthy pregnancy.</p>
         <a
           className="App-link"
@@ -39,7 +46,7 @@ function App() {
         </a>
       </header>
       <main className="App-main">
-        <Mypages/>
+        <Mypages />
         <section className="tracker-section">
           <h2>Week-by-Week Tracker</h2>
           <p>Enter your due date to start tracking your pregnancy progress.</p>

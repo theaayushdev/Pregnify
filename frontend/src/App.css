@@ -1,10 +1,22 @@
 /* App.css */
 
+/* Define custom colors */
+:root {
+  --light-pink: #ffe4e1;
+  --soft-pink: #ff6f61;
+  --hot-pink: #ff69b4;
+  --dark-pink: #ff1493;
+  --lighter-pink: #ffc0cb;
+  --border-pink: #ffb6c1;
+  --shadow-pink: rgba(255, 182, 193, 0.4);
+}
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #ffe4e1; /* Light pink background from 'sirus' */
-  color: #333; /* Text color for readability */
+  background-color: var(--light-pink);
+  color: #333;
+  box-sizing: border-box; /* Ensures padding/borders are included in width/height calculation */
 }
 
 .App {
@@ -12,73 +24,76 @@ body {
 }
 
 .App-header {
-  background-color: #ffc0cb; /* Light pink from 'sirus' */
+  
   padding: 20px;
-  border-bottom: 2px solid #ffb6c1; /* Slightly darker pink from 'sirus' */
+  border-bottom: 2px solid var(--border-pink);
+  
 }
 
 h1 {
-  color: #ff6f61; /* From 'main' */
+  color: var(--soft-pink);
   font-size: 2.5rem;
 }
 
 p {
   font-size: 1.2rem;
   margin: 10px 0;
-  color: #ff6f61; /* Soft pink text from 'sirus' */
+  color: var(--soft-pink);
 }
 
 .App-link {
-  color: #ff69b4; /* Hot pink for links from 'sirus' */
+  color: var(--hot-pink);
   text-decoration: none;
 }
 
 .App-link:hover {
-  color: #ff1493; /* Deep pink on hover from 'sirus' */
+  color: var(--dark-pink);
   text-decoration: underline;
 }
 
 .App-main {
   padding: 20px;
-  background-color: #ffe4e1; /* Light pink from 'sirus' */
+  background-color: var(--light-pink);
 }
 
 .tracker-section,
 .tips-section {
   margin: 20px 0;
   padding: 20px;
-  background-color: #ffd1dc; /* Light pink from 'sirus' */
+  background-color: var(--lighter-pink); /* Using CSS variable for consistency */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4); /* Pink shadow from 'sirus' */
+  box-shadow: 0 4px 8px var(--shadow-pink);
+
 }
 
 .tracker-section h2,
 .tips-section h2 {
-  color: #ff69b4; /* Hot pink from 'sirus' */
+  
+  color: var(--hot-pink);
   margin-bottom: 10px;
 }
 
 .due-date-input {
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #ffb6c1; /* Light pink border from 'sirus' */
+  border: 1px solid var(--border-pink);
   border-radius: 5px;
   margin-right: 10px;
-  background-color: #ffe4e1; /* Light pink background from 'sirus' */
+  background-color: var(--light-pink);
 }
 
 .track-button {
   padding: 10px 20px;
   font-size: 1rem;
-  color: #fff; /* White text for contrast from 'sirus' */
-  background-color: #ff6f61; /* Soft pink from both */
+  color: #fff;
+  background-color: var(--soft-pink);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .track-button:hover {
-  background-color: #ff5c5c; /* Slightly darker pink from 'sirus' */
+  background-color: #ff5c5c;
 }
 
 .tips-list {
@@ -92,13 +107,76 @@ p {
 .tip-item {
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #ff6f61; /* Soft pink from 'sirus' */
+  color: var(--soft-pink);
 }
 
 .App-footer {
   margin-top: 20px;
   padding: 10px;
-  background-color: #ffc0cb; /* Light pink footer from 'sirus' */
+  background-color: var(--lighter-pink);
   font-size: 0.9rem;
-  color: #ff69b4; /* Hot pink text from 'sirus' */
+  color: var(--hot-pink);
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .App-header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .tracker-section,
+  .tips-section {
+    padding: 15px;
+  }
+
+  .due-date-input,
+  .track-button {
+    font-size: 0.9rem;
+  }
+
+  .App-footer {
+    font-size: 0.8rem;
+  }
+
+}
+/* Pregnify (Main Heading) */
+.Pregnify {
+  position:absolute; /* Ensure absolute positioning */
+  top: 10px; /* Add spacing from the top */
+  left: 10px; /* Add spacing from the left */
+  margin: 0;
+  padding: 0;
+  color: var(--hot-pink); /* Main heading color */
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  position: absolute; /* Position the nav container absolutely */
+  top: 10px; /* Align with Pregnify */
+  right: 20px; /* Align to the right */
+  display: flex; /* Flexbox for alignment */
+  gap: 20px; /* Space between navigation links */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove underline */
+  color: var(--soft-pink); /* Navigation links color */
+  font-size: 1rem; /* Font size for navigation links */
+  font-weight: bold; /* Make links bold */
+  transition: color 0.3s; /* Smooth hover transition */
+}
+
+.nav-link:hover {
+  color: var(--dark-pink); /* Hover color for navigation links */
+}
+
+  
+
+
+
